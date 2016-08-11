@@ -232,12 +232,12 @@ int main (int argc, const char * argv[])
     doit(text6);
     #else
     /* Parse standard testfiles: */
-    dofile("FLASH:/test1.json");
-    dofile("FLASH:/test2.json");
-    dofile("FLASH:/test3.json");
-    dofile("FLASH:/test4.json");
-    dofile("FLASH:/test5.json");
-    dofile("FLASH:/test6.json");
+    dofile(CONFIG_FS_ROOT"test1.json");
+    dofile(CONFIG_FS_ROOT"test2.json");
+    dofile(CONFIG_FS_ROOT"test3.json");
+    dofile(CONFIG_FS_ROOT"test4.json");
+    dofile(CONFIG_FS_ROOT"test5.json");
+    dofile(CONFIG_FS_ROOT"test6.json");
     #endif
 
     /* Now some samplecode for building objects concisely: */
