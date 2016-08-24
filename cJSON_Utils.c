@@ -7,7 +7,7 @@
 static int cJSONUtils_strcasecmp(const char *s1,const char *s2)
 {
     if (!s1) return (s1==s2)?0:1;if (!s2) return 1;
-    for(; tolower(*s1) == tolower(*s2); ++s1, ++s2) if(*s1 == 0)    return 0;
+    for(; tolower(*(const unsigned char *)s1) == tolower(*(const unsigned char *)s2); ++s1, ++s2) if(*s1 == 0)    return 0;
     return tolower(*(const unsigned char *)s1) - tolower(*(const unsigned char *)s2);
 }
 
@@ -17,7 +17,7 @@ static int cJSONUtils_Pstrcasecmp(const char *a,const char *e)
     if (!a || !e) return (a==e)?0:1;
     for (;*a && *e && *e!='/';a++,e++) {
         if (*e=='~') {if (!(e[1]=='0' && *a=='~') && !(e[1]=='1' && *a=='/')) return 1;  else e++;}
-        else if (tolower(*a)!=tolower(*e)) return 1;
+        else if (tolower(*(const unsigned char *)a)!=tolower(*(const unsigned char *)e)) return 1;
     }
     if ((*e!=0 && *e!='/') != (*a!=0)) return 1;
     return 0;
