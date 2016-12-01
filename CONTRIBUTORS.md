@@ -15,6 +15,7 @@ Contributors
 * [IvanVoid](https://github.com/npi3pak)
 * [Jonathan Fether](https://github.com/jfether)
 * [Kevin Branigan](https://github.com/kbranigan)
+* [Kyle Chisholm](https://github.com/ChisholmKyle)
 * [Linus Wallgren](https://github.com/ecksun)
 * [Max Bruckner](https://github.com/FSMaxB)
 * Mike Pontillo
@@ -22,6 +23,7 @@ Contributors
 * [Rafael Leal Dias](https://github.com/rafaeldias)
 * [Rod Vagg](https://github.com/rvagg)
 * [Roland Meertens](https://github.com/rmeertens)
+* [Stephan Gatzka](https://github.com/gatzka)
 * [Weston Schmidt](https://github.com/schmidtw)
 
 And probably more people on [SourceForge](https://sourceforge.net/p/cjson/bugs/search/?q=status%3Aclosed-rejected+or+status%3Aclosed-out-of-date+or+status%3Awont-fix+or+status%3Aclosed-fixed+or+status%3Aclosed&page=0)

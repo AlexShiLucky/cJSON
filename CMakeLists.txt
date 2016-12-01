@@ -12,10 +12,10 @@ set(CJSON_VERSION_SO 1)
 set(CJSON_UTILS_VERSION_SO 1)
 set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
 
-option(ENABLE_CUSTOM_COMPILER_FLAGS ON)
+option(ENABLE_CUSTOM_COMPILER_FLAGS "Enables custom compiler flags for Clang and GCC" ON)
 if (ENABLE_CUSTOM_COMPILER_FLAGS)
     if(("${CMAKE_C_COMPILER_ID}" MATCHES "GNU") OR ("${CMAKE_C_COMPILER_ID}" MATCHES "Clang"))
-        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings")
+        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2")
     endif()
 endif()
 
